@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="ssh://git@github.com" />
+  <remote name="busybox" fetch="git://git.busybox.net" />
+  <default remote="github" revision="master" />
+
+  <!-- Yandex respositories -->
+  <project name="ya-streams/buildroot_external" path="br_external"/>
+
+  <!-- Other repositories -->
+  <!-- Clone buildroot from github-mirror cause it is more faster -->
+  <!-- <project remote="busybox" name="buildroot" path="buildroot" revision="2021.02.x" /> -->
+  <project name="buildroot/buildroot" path="buildroot" revision="2021.02.x" />
+</manifest>
